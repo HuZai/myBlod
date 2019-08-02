@@ -68,12 +68,9 @@ module.exports = {
             listen       8080;
             server_name  localhost;
             location /{
-               try_files $uri $uri/ @router;
+               try_files $uri $uri/ /my/index.html;
               index index.html index.htm;
            }
-           location @router{
-                           rewrite ^.*$ /my/index.html last;
-            }
      }
 vue 打包dist 目录里的文件
 上传到nginx 根目的 my 文件下
