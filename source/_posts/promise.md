@@ -11,6 +11,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 $ hexo new "My New Post"
 $ hexo new "My New Post"
 ```
+
 {% codeblock lang:js %}
 [setX: 10 y: 10 width: 20 height: 20];
 {% endcodeblock %}
