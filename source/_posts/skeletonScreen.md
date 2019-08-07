@@ -31,6 +31,19 @@ More info: [vue cli 链式操作](https://cli.vuejs.org/zh/guide/webpack.html#�
 
 `shell 目录是用来存取生成的骨架屏目录。生成操作见：下面page-skeleton-webpack-plugin配置使用文档`
 
+**vue cli3 下`page-skeleton server listen at port: 8989 `报这个错误 按下修改**
+```$xslt
+page-skeleton-webpack-plugin 包 下src/skeletonPlugin.js 25行 修改如下
+
+SkeletonPlugin.prototype.createServer = function () { // eslint-disable-line func-names
+  if (!this.server) {
+    const server = this.server = new Server(this.options) // eslint-disable-line no-multi-assign
+    server.listen().catch(err => server.log.warn(err))
+  }
+}
+```
+More info: [page-skeleton-webpack-plugin有个fix分支未合并](https://github.com/ElemeFE/page-skeleton-webpack-plugin/commit/cd6e14af157bbee9d3442e7b5fd0df79c2b43ce3)
+
 More info: [page-skeleton-webpack-plugin配置使用文档](https://github.com/ElemeFE/page-skeleton-webpack-plugin/blob/master/docs/i18n/zh_cn.md)
 ### 2.html 里设置  `<!-- shell -->` 插件会替换此标签为对应的骨架屏
 
