@@ -162,3 +162,8 @@ export default new Vue({
     2.可以对骨架屏做路由 开发环境下调试开发
     3.需要手写骨架屏文件  比较麻烦
 ## vue-content-loader 快速自定义出骨架屏 react-content-loader（react）
+    一个快速开发 绚丽骨架屏的框架
+    
+More info: [vue-content-loader](https://github.com/egoist/vue-content-loader)
+
+More info: [基于vue-content-loader在线设置骨架屏](http://danilowoz.com/create-vue-content-loader/)
