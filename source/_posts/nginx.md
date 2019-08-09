@@ -1,6 +1,9 @@
 ---
-title: nginx 配置vue项目 二级目录处理 
-tags: vue
+title: nginx 配置vue项目 二级目录处理
+date: 2019-08-06 15:21:51
+tags: 
+    - nginx
+    - vue
 ---
 ### 使用 lsof 查看端口进程
 ``` bash
