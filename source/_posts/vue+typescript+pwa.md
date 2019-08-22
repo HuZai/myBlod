@@ -207,6 +207,11 @@ tags:
         }
       },
       ...
+  上述配置[runtimeCaching]  build 后 service-worker.js 里会多处一下两行
+       
+        workbox.routing.registerRoute(/leaf/, workbox.strategies.networkFirst({ "cacheName":"my-api-cache","networkTimeoutSeconds":10, plugins: [new workbox.expiration.Plugin({"maxEntries":5,"maxAgeSeconds":30,"purgeOnQuotaError":false}), new workbox.cacheableResponse.Plugin({"statuses":[200]})] }), 'GET');
+        workbox.routing.registerRoute(/.*\.(?:js|css)/, workbox.strategies.networkFirst({ "cacheName":"my-js-cache", plugins: [new workbox.expiration.Plugin({"maxEntries":30,"maxAgeSeconds":30,"purgeOnQuotaError":false}), new workbox.cacheableResponse.Plugin({"statuses":[0,200]})] }), 'GET');
+
  [更多相关配置](https://github.com/vuejs/vue-docs-zh-cn/tree/master/vue-cli-plugin-pwa)
  [runtimeCaching 相关配置](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
  ['networkFirst'等缓存策略见我另一片文章](/2019/08/09/pwa/)
