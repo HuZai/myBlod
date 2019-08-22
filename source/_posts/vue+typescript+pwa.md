@@ -1,6 +1,6 @@
 ---
 title: vue cli3 +ts + pwa 配置详解
-date: 2019-08-11 15:21:51
+date: 2019-08-11
 tags:
 	- vue
 	- TypeScript

@@ -1,5 +1,6 @@
 ---
 title: vue cli3 结合 prerender-spa-plugin 预渲染做seo 配置 
+date: 2019-02-06
 tags: vue
 ---
 遇到问题：

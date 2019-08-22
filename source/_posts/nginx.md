@@ -1,6 +1,6 @@
 ---
 title: nginx 配置vue项目 二级目录处理
-date: 2019-08-06 15:21:51
+date: 2018-12-06 15:21:51
 tags: 
     - nginx
     - vue
