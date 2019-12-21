@@ -32,14 +32,15 @@ $ git remote update origin --prune
 Fetching origin
 From http://XXXX
  - [deleted]           (none)     -> origin/UP1953
- - [deleted]           (none)     -> origin/UP2038
- - [deleted]           (none)     -> origin/UP2038Stage
  - [deleted]           (none)     -> origin/edit
- - [deleted]           (none)     -> origin/master
- - [deleted]           (none)     -> origin/test
  - [deleted]           (none)     -> origin/up1827
 ```
 ### check 远程分支到本地 另命名
  ```$xslt
 git checkout -b 本地分支名x origin/远程分支名x
 ```
+### git 添加远程分
+ ```$xslt
+ git remote add origin XXXXX
+ git push origin master
+ ```
