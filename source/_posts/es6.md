@@ -17,4 +17,4 @@ tags:
     import  对引入对象修改回 会对原对象产生修改
     require 是复制一个新对象 不会对原对象产生修改
     
-    require 是运行时 执行所以可以执行 require()
+    require 是运行时执行,所以是可以执行 require()

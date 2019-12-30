@@ -1,5 +1,6 @@
 ---
-title: vue cli3 多页面配置 history 路由配置处理
+title: vue cli2.X 多页面配置 history 路由配置处理
+date: 2019-08-01
 tags:
 	- vue
 ---

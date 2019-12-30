@@ -1,5 +1,6 @@
 ---
 title: vue cli webpack 相关配置处理
+date: 2017-08-01
 tags:
 	- vue
 	- webpack
